@@ -8,8 +8,6 @@ A robust and scalable Node.js + Express backend powering a car rental platform w
 
 📅 Booking System with Pickup & Return
 
-🧭 Dynamic Pickup/Return Locations
-
 🧾 Custom API Response & Error Handling
 
 📦 MongoDB + Mongoose ODM
@@ -19,8 +17,6 @@ A robust and scalable Node.js + Express backend powering a car rental platform w
 Node.js (v18+)
 
 MongoDB
-
-Redis (if used for caching or sessions)
 
 📦 Installation
 bash
