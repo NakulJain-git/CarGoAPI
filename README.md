@@ -1,100 +1,27 @@
-🚗 CarGoAPI Backend
-A robust and scalable Node.js + Express backend powering a car rental platform with broker management, car bookings, role-based access, and RESTful APIs.
 
-📁 Features
-🔐 JWT Auth & Role-based Access (Admin, Broker, User)
+# CarGoAPI
 
-🏢 Broker & Car Management
+CarGoAPI is a scalable and high-performance backend service powering modern car rental platforms. It provides RESTful APIs for seamless broker management, car bookings, and user operations — all built with Node.js, Express, and MongoDB.
+## Screenshots
 
-📅 Booking System with Pickup & Return
+![Image](https://github.com/user-attachments/assets/bc5ae27d-7717-4244-9d62-c76e5519b8e8)
 
-🧾 Custom API Response & Error Handling
 
-📦 MongoDB + Mongoose ODM
+## Run Locally
 
-🚀 Getting Started
-🛠️ Prerequisites
-Node.js (v18+)
+Clone the project
 
-MongoDB
+```bash
+  git clone https://link-to-project
+```
 
-📦 Installation
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/your-backend-repo.git
-cd your-backend-repo
-npm install
-🔑 Environment Variables
-Create a .env file in the root and add:
+Go to the project directory
 
-env
-Copy
-Edit
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/car_rental
-JWT_SECRET=your_jwt_secret
-🧪 Run the Server
-bash
-Copy
-Edit
-npm run dev
-Server runs on: http://localhost:5000
+Install dependencies
 
-🛠️ API Routes Overview
-Method	Endpoint	Description	Access
-POST	/api/v1/auth/register	Register a new user	Public
-POST	/api/v1/auth/login	Login	Public
-GET	/api/v1/broker/:id	Get broker by ID	Admin/User
-POST	/api/v1/broker	Create broker	Admin
-POST	/api/v1/booking	Book a car	User
+```bash
+  npm install
+```
 
-📘 Full API documentation coming soon via Swagger/Postman!
 
-🧪 Testing
-bash
-Copy
-Edit
-npm test
-You can add test status badges here if using Jest or Mocha.
-
-🧑‍💻 Tech Stack
-Node.js
-
-Express.js
-
-MongoDB + Mongoose
-
-JWT Authentication
-
-Redis (optional)
-
-Postman (for API testing)
-
-📁 Folder Structure
-arduino
-Copy
-Edit
-.
-├── controllers/
-├── models/
-├── routes/
-├── middlewares/
-├── utils/
-├── config/
-├── .env
-├── server.js
-📄 License
-MIT License
-
-🙌 Contributing
-Fork the repository
-
-Create your branch: git checkout -b feature-name
-
-Commit your changes: git commit -m 'Add feature'
-
-Push to the branch: git push origin feature-name
-
-Open a pull request
 
