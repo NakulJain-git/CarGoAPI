@@ -4,8 +4,8 @@ import {registerUser,
     logout,
     refreshAccessToken,
     getMe,
-    updatePassword
-
+    updatePassword,
+    deleteUser
 } from "../controllers/user.controllers.js";
 import { verifyJWT } from "../middlewares/auth.middlewares.js";
 const router = Router();
@@ -17,4 +17,5 @@ router.route("/logout").post(verifyJWT,logout)
 router.route("/refresh").post(refreshAccessToken)
 router.route("/getMe").get(verifyJWT,getMe)
 router.route("/update-password").put(verifyJWT,updatePassword)
+router.route("/delete").delete(verifyJWT,deleteUser)
 export default router;

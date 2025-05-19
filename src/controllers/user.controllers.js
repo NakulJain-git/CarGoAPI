@@ -170,11 +170,20 @@ const getMe = asyncHandler(async (req, res) => {
         throw new ApiError(500, error?.message || "Internal server error")
     }
 })
+const deleteUser = asyncHandler(async (req, res) => {
+    const user = await User.findByIdAndDelete(req.user._id)
+    if (!user) {
+        throw new ApiError(404, "User not found")
+    }
+    return res.status(200)
+        .json(new ApiResponse(200, {}, "User deleted successfully"))
+})
 export {
     registerUser,
     login,
     logout,
     refreshAccessToken,
     getMe,
-    updatePassword
+    updatePassword,
+    deleteUser
 }
